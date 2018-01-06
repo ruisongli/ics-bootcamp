@@ -6,6 +6,6 @@ while statement != 'BYE'
     year = 1930 + rand(21)
     puts 'NO, NOT SINCE ' + year.to_s + ' !'
   end
-statement = gets.chomp
+  statement = gets.chomp
 end
 puts 'bye'

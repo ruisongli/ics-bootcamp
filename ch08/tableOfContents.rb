@@ -1,6 +1,12 @@
 content = ['Table of Contents' , 'Chapter 1: Getting Started' , 'page  1', 'Chapter 2: Numbers' , 'page  9' , 'Chapter 3: Letters' , 'page 13']
 line_width = 60
-puts content[0].center(line_width)
-puts content[1].ljust(line_width/2) + content[2].rjust(line_width/2)
-puts content[3].ljust(line_width/2) + content[4].rjust(line_width/2)
-puts content[5].ljust(line_width/2) + content[6].rjust(line_width/2)
+i = 1
+
+puts 'Table of Contents'.center(line_width)
+
+while i <= 6
+  if i%2==1
+    puts content[i].ljust(line_width/2) + content[i+1].rjust(line_width/2)
+  end
+  i = i + 2
+end

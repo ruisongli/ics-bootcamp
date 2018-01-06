@@ -19,3 +19,4 @@ while statement != ''
     statement = gets.chomp
   end
 end
+puts 'bye'

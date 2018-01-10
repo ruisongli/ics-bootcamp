@@ -1,7 +1,7 @@
 number = 99
 while number != 0
   if number != 1
-    puts number.to_s + ' bottles of beer on the wall'
+    puts number.to_s + ' bottles of beer on the wall, ' + number.to_s + ' bottles of beer'
     puts 'take one down and pass it around, '+ (number - 1).to_s + ' bottles of beer on the wall'
   else
     puts '1 bottle of beer on the wall, 1 bottle of beer'
